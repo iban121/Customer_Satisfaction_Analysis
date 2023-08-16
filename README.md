@@ -11,15 +11,14 @@ X4 = I paid a good price for my order
 X5 = I am satisfied with my courier
 X6 = The app makes ordering easy for me
 
-And, the customers rated the company on a scale of 1-5, where 5 indicates the highest satisfaction. 
+And, the customers rated the company on a scale of 1-5, where 5 indicates the highest satisfaction. In total 126 entries were provided for this analysis. 
 
 ## Data Wrangling and EDA
 
 There were no missing data, and all the labels were classified as integers from 1-5. 
 
-## ML Model
-
 ## Best model
+Several models were developed, their hyperparameters were tuned using GridSearchCV, and they were evaluated according to their accuracy score, as stated in the aim. In addition to the accuracy, the area under the ROC was also calculated and where possible the feature importance was also worked out. This posed quite a problem none of the models, even after being optimised, could achieve an accuracy score exceeding 70%. As a result, a stacked model was developed which yielded an accuracy score of 86.5%. 
 
 ## Conclusions
 The most important features: X1 and X5
